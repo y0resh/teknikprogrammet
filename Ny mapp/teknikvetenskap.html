@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <!-- Grundläggande inställningar för webbsidan -->
+    
+    <!-- Ställer in teckenuppsättningen så att å, ä och ö visas korrekt -->
+    <meta charset="UTF-8">
+    
+    <!-- Gör sidan responsiv så att den anpassar sig till olika skärmstorlekar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Titeln på webbsidan, syns i webbläsarens flik -->
+    <title>Teknikvetenskap</title>
+
+    <!-- Länk till Bootstrap CSS, ett ramverk som gör sidan snyggare och mer responsiv -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Intern CSS för att styra sidans design -->
+    <style>
+        /* Hero-sektionen (stor bild med text ovanpå) */
+        .hero {
+            background: url(för\ teknologi.webp) no-repeat center center/cover; /* Bakgrundsbild */
+            color: white; /* Vit text för bättre synlighet */
+            padding: 100px 20px; /* Ger luft runt texten */
+            text-align: center; /* Centrerar texten */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigeringsmeny högst upp på sidan -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <!-- Länk som leder tillbaka till startsidan -->
+            <a class="navbar-brand" href="index.html">Teknikprogrammet</a>
+        </div>
+    </nav>
+
+    <!-- Hero-sektionen: en stor bild med titeln "Teknikvetenskap" -->
+    <header class="hero">
+        <h1>Teknikvetenskap</h1>
+    </header>
+
+    <!-- Huvudinnehållet på sidan -->
+    <div class="container mt-4">
+        <!-- Beskrivning av inriktningen -->
+        <p>Teknikvetenskap är en inriktning för dig som vill fördjupa dig inom matematik, fysik och teknik. Här får du kunskaper inom mekanik, elektroteknik och tekniska beräkningar.</p>
+
+        <!-- Lista med kurser inom inriktningen -->
+        <h2>Kurser inom inriktningen</h2>
+        <ul>
+            <li>Teknikspecialisering</li>
+            <li>Matematik 4 & 5</li>
+            <li>Fysik 2</li>
+            <li>Teknisk mekanik</li>
+        </ul>
+
+        <!-- Lista med framtida yrken efter utbildningen -->
+        <h2>Framtida yrken</h2>
+        <p>Du kan studera vidare och arbeta som:</p>
+        <ul>
+            <li>Civilingenjör</li>
+            <li>Forskare inom teknik och naturvetenskap</li>
+            <li>Teknisk analytiker</li>
+            <li>Elektrotekniker</li>
+        </ul>
+
+        <!-- Knapp för att gå tillbaka till startsidan -->
+        <a href="index.html" class="btn btn-primary">Tillbaka</a>
+    </div>
+
+</body>
+</html>

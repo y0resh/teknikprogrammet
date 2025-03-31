@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <!-- Här börjar inställningarna för webbsidan -->
+    
+    <!-- Ställer in teckenuppsättningen så att å, ä och ö fungerar -->
+    <meta charset="UTF-8">
+    
+    <!-- Gör sidan responsiv så att den anpassar sig efter olika skärmstorlekar (mobil, surfplatta, dator) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Titeln som visas i webbläsarens flik -->
+    <title>Teknikprogrammet - Gymnasieinfo</title>
+
+    <!-- Länk till en extern CSS-fil från Bootstrap (en stilmall som gör det enklare att designa sidan) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Intern CSS (design) för att ändra utseendet på webbsidan -->
+    <style>
+        /* Ställer in typsnittet för hela sidan */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Skapar en stor bakgrundssektion (hero) högst upp på sidan */
+        .hero {
+            background: url(bakgrund.webp) no-repeat center center/cover; /* Bakgrundsbild */
+            color: white; /* Gör texten vit så den syns bättre */
+            padding: 100px 20px; /* Ger luft runt texten */
+            text-align: center; /* Centrerar texten */
+        }
+
+        /* Skapar mellanrum mellan sektioner */
+        .container {
+            margin-top: 20px;
+        }
+
+        /* Skapar mellanrum mellan kort (cards) */
+        .card {
+            margin-bottom: 20px;
+        }
+
+        /* Skapar en snygg sidfot (footer) */
+        .footer {
+            background: #343a40; /* Mörkgrå bakgrund */
+            color: white; /* Vit text */
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Skapar en ljusgrå bakgrund för vissa sektioner */
+        .section-bg {
+            background-color: #f8f9fa;
+            padding: 40px;
+            border-radius: 10px; /* Gör hörnen lite rundade */
+        }
+        .video-section {
+            text-align: center;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigeringsmeny högst upp på sidan -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Titel/logga i menyn -->
+            <a class="navbar-brand" href="#">Teknikprogrammet</a>
+
+            <!-- Knapp för mobilmeny -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menylänkar -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#bakgrund">Om Programmet</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inriktningar">Inriktningar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#framtid">Framtid</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#foraldrar">För Föräldrar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Stor bildsektion (hero) med en kort introduktion -->
+    <header class="hero">
+        <h1>Teknikprogrammet</h1>
+        <p>Upptäck teknikens värld och dina framtida möjligheter</p>
+    </header>
+
+    <div class="container">
+        <!-- Sektion om Teknikprogrammet -->
+        <section id="bakgrund" class="mt-4 section-bg">
+            <h2>Om Teknikprogrammet</h2>
+            <p>Teknikprogrammet är en utbildning för elever som är intresserade av teknik, innovation och problemlösning.<br> Det innehåller både teoretiska och praktiska moment och förbereder elever för både vidare studier och arbetslivet.</p>
+        </section>
+        
+
+        <!-- Sektion om olika inriktningar inom Teknikprogrammet -->
+        <section id="inriktningar" class="mt-4">
+            <h2>Inriktningar</h2>
+            <div class="row">
+                <!-- Första inriktningen: Design och produktutveckling -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <!-- Bild för inriktningen -->
+                        <img src="design.webp" class="card-img-top" alt="Design och produktutveckling">
+                        <div class="card-body">
+                            <h5 class="card-title">Design och produktutveckling</h5>
+                            <p class="card-text">Lär dig att utveckla produkter med design och innovation i fokus.</p>
+                            <!-- Knapp för att läsa mer -->
+                            <a href="design.html" class="btn btn-primary">Läs mer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Andra inriktningen: Informations- och medieteknik -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <!-- Bild för inriktningen -->
+                        <img src="medie.webp" class="card-img-top" alt="Informations- och medieteknik">
+                        <div class="card-body">
+                            <h5 class="card-title">Informations- och medieteknik</h5>
+                            <p class="card-text">Fördjupa dig i programmering, webbutveckling och digitala medier.</p>
+                            <!-- Knapp för att läsa mer -->
+                            <a href="medieteknik.html" class="btn btn-primary">Läs mer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tredje inriktningen: Teknikvetenskap -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <!-- Bild för inriktningen -->
+                        <img src="vetenskap.webp" class="card-img-top" alt="Teknikvetenskap">
+                        <div class="card-body">
+                            <h5 class="card-title">Teknikvetenskap</h5>
+                            <p class="card-text">Utforska avancerad teknik och vetenskapliga metoder.</p>
+                            <!-- Knapp för att läsa mer -->
+                            <a href="teknikvetenskap.html" class="btn btn-primary">Läs mer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sektion om framtida möjligheter efter utbildningen -->
+        <section id="framtid" class="mt-4 section-bg">
+            <h2>Framtiden</h2>
+            <p>Efter teknikprogrammet har du många möjligheter, både inom vidare studier och yrkeslivet. Här är några alternativ:</p>
+            
+            <h3>Vidare studier</h3>
+            <p>Om du vill plugga vidare kan du söka till universitet och högskola, ofta inom:</p>
+            <ul>
+                <li><strong>Ingenjörsutbildningar</strong> (t.ex. maskinteknik, datateknik, elektroteknik, civilingenjör)</li>
+                <li><strong>Teknisk design och produktutveckling</strong></li>
+                <li><strong>IT och programmering</strong> (t.ex. datavetenskap, mjukvaruutveckling, cybersäkerhet)</li>
+                <li><strong>Arkitektur</strong></li>
+                <li><strong>Naturvetenskapliga ämnen</strong></li>
+            </ul>
+        
+            <h3>Arbetsmöjligheter direkt efter gymnasiet</h3>
+            <p>Teknikprogrammet är ett högskoleförberedande program, men om du vill jobba direkt kan du hitta jobb inom:</p>
+            <ul>
+                <li><strong>IT och teknik</strong> (t.ex. supporttekniker, nätverkstekniker, CAD-ritare)</li>
+                <li><strong>Produktion och industri</strong> (t.ex. produktionstekniker, automationstekniker)</li>
+                <li><strong>Byggbranschen</strong> (t.ex. konstruktör, CAD-ritare)</li>
+                <li><strong>Entreprenörskap</strong> – starta eget företag inom teknik eller IT</li>
+            </ul>
+        
+            <h3>Yrkesutbildningar och YH-utbildningar</h3>
+            <p>Om du vill ha en kortare och mer praktisk utbildning kan du läsa en <strong>YH-utbildning</strong> inom:</p>
+            <ul>
+                <li><strong>El och automation</strong></li>
+                <li><strong>IT och programmering</strong></li>
+                <li><strong>Spelutveckling</strong></li>
+                <li><strong>Robotik och AI</strong></li>
+                <li><strong>Teknisk försäljning och projektledning</strong></li>
+            </ul>
+        </section>
+        
+        
+
+        <!-- Sektion med information för föräldrar -->
+        <section id="foraldrar" class="mt-4 section-bg">
+            <h2>För Föräldrar</h2>
+            <p>Om ditt barn funderar på att välja Teknikprogrammet finns det några viktiga saker att känna till. Programmet är högskoleförberedande och ger en bred teknisk och naturvetenskaplig grund.</p>
+        
+            <h3>Vad är Teknikprogrammet?</h3>
+            <p>Teknikprogrammet är en utbildning för elever som är intresserade av teknik, innovation och problemlösning. Det innehåller både teoretiska och praktiska moment och förbereder elever för både vidare studier och arbetslivet.</p>
+        
+            <h3>Vad läser man på Teknikprogrammet?</h3>
+            <ul>
+                <li><strong>✅Matematik & Fysik</strong> – Viktiga ämnen för tekniska yrken och vidare studier.</li>
+                <li><strong>Programmering & IT</strong> – Grundläggande eller avancerad kodning beroende på inriktning.</li>
+                <li><strong>Teknisk Design & CAD</strong> – Digitalt ritande och produktutveckling.</li>
+                <li><strong>Produktionsteknik & Konstruktion</strong> – Förståelse för hur produkter tillverkas.</li>
+                <li><strong>Entreprenörskap</strong> – Möjlighet att starta ett eget företag under gymnasiet (UF-företag).</li>
+            </ul>
+        
+            <h3>Vilka inriktningar finns?</h3>
+            <ul>
+                <li><strong>Design och produktutveckling</strong> – Fokus på formgivning och innovation.</li>
+                <li><strong>Informations- och medieteknik</strong> – Mycket programmering och IT.</li>
+                <li><strong>Samhällsbyggande och miljö</strong> – Arkitektur, byggteknik och hållbarhet.</li>
+                <li><strong>Produktionsteknik</strong> – Förståelse för industriella processer.</li>
+                <li><strong>Teknikvetenskap</strong> – Fördjupning i fysik och matematik, bra för ingenjörsstudier.</li>
+            </ul>
+        
+
+        </section>
+        
+    </div>
+    <div class="container">
+        <!-- Video-sektion -->
+        <section class="video-section">
+            <h2>Se vår introduktionsvideo</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lICxj74Egs4?start=7" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </div>
+
+    <!-- Sidfot (footer) längst ner på sidan -->
+    <footer class="footer">
+        <p>&copy; 2025 Teknikprogrammet | Skapadare Ali Naderi</p>
+    </footer>
+
+    <!-- Länkar till Bootstrap JavaScript för att göra menyn och andra funktioner interaktiva -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+

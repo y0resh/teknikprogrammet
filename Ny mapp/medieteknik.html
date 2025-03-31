@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <!-- Grundläggande inställningar för webbsidan -->
+    
+    <!-- Ställer in teckenuppsättningen så att å, ä och ö fungerar korrekt -->
+    <meta charset="UTF-8">
+    
+    <!-- Gör sidan responsiv så att den anpassar sig till olika skärmstorlekar (mobil, surfplatta, dator) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Titeln som visas i webbläsarens flik -->
+    <title>Informations- och Medieteknik</title>
+
+    <!-- Länk till Bootstrap CSS för att göra designen snyggare och responsiv -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Intern CSS för att styra utseendet på webbsidan -->
+    <style>
+        /* Design för hero-sektionen (stora introduktionsbilden) */
+        .hero {
+            background: url(för\ medie\ teknik.webp) no-repeat center center/cover; /* Bakgrundsbild */
+            color: white; /* Vit text så att den syns tydligt */
+            padding: 100px 20px; /* Ger luft runt texten */
+            text-align: center; /* Centrerar texten */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigeringsmeny högst upp på sidan -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <!-- Länk som leder tillbaka till startsidan -->
+            <a class="navbar-brand" href="index.html">Teknikprogrammet</a>
+        </div>
+    </nav>
+
+    <!-- Stora introduktionssektionen med bakgrundsbild och titel -->
+    <header class="hero">
+        <h1>Informations- och Medieteknik</h1>
+    </header>
+
+    <!-- Huvudinnehåll i en container som skapar mellanrum runt texten -->
+    <div class="container mt-4">
+        <!-- Kort beskrivning av inriktningen -->
+        <p>Denna inriktning ger dig djupa kunskaper inom programmering, webbutveckling, digitala medier och IT-infrastruktur. Du lär dig att utveckla mjukvara, skapa webbsidor och hantera databaser.</p>
+
+        <!-- Lista över kurser som ingår i utbildningen -->
+        <h2>Kurser inom inriktningen</h2>
+        <ul>
+            <li>Programmering 1 & 2</li>
+            <li>Webbutveckling</li>
+            <li>Nätverksteknik</li>
+            <li>Databashantering</li>
+            <li>IT-säkerhet</li>
+        </ul>
+
+        <!-- Lista över möjliga yrken efter utbildningen -->
+        <h2>Framtida yrken</h2>
+        <p>Du kan studera vidare och arbeta som:</p>
+        <ul>
+            <li>Systemutvecklare</li>
+            <li>Webbutvecklare</li>
+            <li>IT-tekniker</li>
+            <li>Cybersecurity-expert</li>
+        </ul>
+
+        <!-- Knapp för att gå tillbaka till startsidan -->
+        <a href="index.html" class="btn btn-primary">Tillbaka</a>
+    </div>
+
+</body>
+</html>
